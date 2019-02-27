@@ -64,16 +64,23 @@ console.log(multiplyNums(3,5,multiply));
 
 
 
-function contains(item, list, cb) {
+function contains(list, item, cb ) {
+ 
+  return cb(list.includes(item));
+  // function truth(list, item){
+  //   return cb(list, item.includes(item))
+    
+  }
+ 
+  
+  contains("Pencil", items, function(has){
+    console.log(has);
+  });
+  
+ 
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-}
-console.log(items.includes('Pencil'));
-console.log(items.includes('gerbils'));
-
-
-
-
+  
 
 
 
